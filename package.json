@@ -1,0 +1,12 @@
+{
+  "name": "gur-dmv-registration-form",
+  "private": true,
+  "workspaces": ["backend", "frontend"],
+  "scripts": {
+    "start": "concurrently \"npm run start:dev --workspace=backend\" \"npm run start:dev --workspace=frontend\"",
+    "install:all": "npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

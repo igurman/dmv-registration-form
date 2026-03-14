@@ -1,0 +1,47 @@
+POST http://localhost:5000/api/v1/form
+Content-Type: application/json
+
+{
+  "vehicle": {
+    "licensePlate": "AAABBBCC",
+    "make": "make",
+    "vin": "ABC1234567890",
+    "dpPlacardNumber": "1234567890",
+    "birthDate": "1985-12-25",
+    "engineNumber": "1234567890"
+  },
+  "owner":{
+    "fullName": "fullName",
+    "dlNumber": "12345",
+    "coOwnerName": "coOwnerName",
+    "dl2Number": "12345",
+    "physicalAddress": "physicalAddress",
+    "apt": "123",
+    "city": "city",
+    "state": "CA",
+    "zipCode": 99999,
+    "county": "county",
+    "mailingAddress": "mailingAddress",
+    "mailingApt": "123",
+    "mailingCity": "mailingCity",
+    "mailingState": "CA",
+    "mailingZipCode": 99999
+  },
+  "itemsRequested": {
+    "licensePlates": true
+  },
+  "reason":{
+    "lost": true
+  },
+  "certification": {
+    "printName": "printName",
+    "title": "title",
+    "areaCode": 999,
+    "telephoneNumber": "916-555-5555",
+    "date": "2026-02-22",
+    "email": "email@email.email"
+  }
+}
+
+###
+
